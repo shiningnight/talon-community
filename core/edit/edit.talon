@@ -104,6 +104,7 @@ clear way down:
     edit.delete()
 
 # Copy
+copy: edit.copy()
 copy that: edit.copy()
 copy all: user.copy_all()
 copy line: user.copy_line()
@@ -128,6 +129,7 @@ copy word right: user.copy_word_right()
 #     edit.copy()
 
 # Cut
+cut: edit.cut()
 cut that: edit.cut()
 cut all: user.cut_all()
 cut line: user.cut_line()
@@ -152,6 +154,7 @@ cut word right: user.cut_word_right()
 #     edit.cut()
 
 # Paste
+pace: edit.paste()
 (pace | paste) that: edit.paste()
 (pace | paste) enter:
     edit.paste()
@@ -164,8 +167,9 @@ paste match: edit.paste_match_style()
 (pace | paste) word: user.paste_word()
 
 # Duplication
-clone that: edit.selection_clone()
-clone line: edit.line_clone()
+dupe: edit.selection_clone()
+dupe that: edit.selection_clone()
+dupe line: edit.line_clone()
 
 # Insert new line
 new line above: edit.line_insert_up()
@@ -179,6 +183,8 @@ new line below | slap: edit.line_insert_down()
     insert(" ")
 
 # Undo/redo
+undo: edit.undo()
+redo: edit.redo()
 undo that: edit.undo()
 redo that: edit.redo()
 

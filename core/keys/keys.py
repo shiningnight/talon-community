@@ -123,9 +123,9 @@ def letters(m) -> str:
 ctx = Context()
 modifier_keys = {
     # If you find 'alt' is often misrecognized, try using 'alter'.
-    "alt": "alt",  #'alter': 'alt',
+    "alter": "alt",  #'alter': 'alt',
     "control": "ctrl",  #'troll':   'ctrl',
-    "shift": "shift",  #'sky':     'shift',
+    "shafe": "shift",  #'sky':     'shift',
     "super": "super",
 }
 if app.platform == "mac":
@@ -210,13 +210,14 @@ symbol_key_words = {
     "right angle": ">",
     "greater than": ">",
     "star": "*",
+    "snow": "*",
     "hash": "#",
     "percent": "%",
     "caret": "^",
     "amper": "&",
     "pipe": "|",
     "dub quote": '"',
-    "double quote": '"',
+    "pair quote": '"',
     # Currencies
     "dollar": "$",
     "pound": "£",
@@ -248,11 +249,14 @@ simple_keys = [
 
 alternate_keys = {
     "wipe": "backspace",
-    "delete": "backspace",
+    "backspace": "backspace",
+    "delete": "delete",
+    "dill": "delete",
     #'junk': 'backspace',
     "forward delete": "delete",
     "page up": "pageup",
     "page down": "pagedown",
+    "weiss": "space"
 }
 # mac apparently doesn't have the menu key.
 if app.platform in ("windows", "linux"):
