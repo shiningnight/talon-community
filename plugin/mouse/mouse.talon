@@ -40,7 +40,7 @@ mid clee:
     key("{modifiers}:up")
     # close the mouse grid
     user.grid_close()
-(dub clee | duke):
+(twin clee | duke):
     mouse_click()
     mouse_click()
     # close the mouse grid
@@ -57,6 +57,10 @@ left drag | drag:
     user.grid_close()
 right drag | righty drag:
     user.mouse_drag(1)
+    # close the mouse grid
+    user.grid_close()
+middle drag:
+    user.mouse_drag(2)
     # close the mouse grid
     user.grid_close()
 end drag | drag end: user.mouse_drag_end()

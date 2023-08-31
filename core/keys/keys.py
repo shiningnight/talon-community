@@ -125,7 +125,7 @@ modifier_keys = {
     # If you find 'alt' is often misrecognized, try using 'alter'.
     "alter": "alt",  #'alter': 'alt',
     "control": "ctrl",  #'troll':   'ctrl',
-    "shafe": "shift",  #'sky':     'shift',
+    "shake": "shift",  #'sky':     'shift',
     "super": "super",
 }
 if app.platform == "mac":
@@ -256,7 +256,8 @@ alternate_keys = {
     "forward delete": "delete",
     "page up": "pageup",
     "page down": "pagedown",
-    "weiss": "space"
+    "weiss": "space",
+    "blake": "escape",
 }
 # mac apparently doesn't have the menu key.
 if app.platform in ("windows", "linux"):

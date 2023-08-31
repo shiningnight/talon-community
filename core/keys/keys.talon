@@ -8,6 +8,8 @@ go <user.arrow_keys>: user.move_cursor(arrow_keys)
 <user.modifiers> <user.unmodified_key>: key("{modifiers}-{unmodified_key}")
 # for key combos consisting only of modifiers, eg. `press super`.
 press <user.modifiers>: key(modifiers)
+hold <user.modifiers>: key("{modifiers}:down")
+real <user.modifiers>: key("{modifiers}:up")
 # for consistency with dictation mode and explicit arrow keys if you need them.
 press <user.keys>: key(keys)
 hold <user.keys>: key("{keys}:down")
